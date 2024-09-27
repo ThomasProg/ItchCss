@@ -155,3 +155,17 @@ max-width:100% !important;
     0 0 0px rgba(255, 255, 255, 0.5),   /* Glowing white bloom effect */
   }
 }
+
+
+
+h2, .link_group, .profile_link, .drop_menu_wrap, .notifications_bell, .header_logo, .header_button {
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* On hover: scale the image and add an outline */
+h2:hover, .link_group:hover, .profile_link:hover, .drop_menu_wrap:hover, .notifications_bell:hover, .header_logo:hover, .header_button:hover {
+    transform: rotate(1deg) scale(1.15); /* Slightly enlarge the image */
+    z-index: 2; /* Ensure it's above other elements */
+   color: #fb922b;
+}
+
