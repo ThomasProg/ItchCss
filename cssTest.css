@@ -1,0 +1,157 @@
+/* Style the project images */
+.game_cell{
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and outline */
+    border-radius: 8px; /* Optional: add rounded corners */
+    padding: 5px;
+flex: 0 0 auto!important; /* Each item takes 1/3 of the container width, with space for gaps */
+  max-width: max(calc(23.33% - 40px), 200px); /* Prevents the item from expanding */
+   min-width: 200px;
+}
+
+/* On hover: scale the image and add an outline */
+.game_cell:hover {
+    transform: rotate(1deg) scale(1.15); /* Slightly enlarge the image */
+    box-shadow: 0 0 15px #fb922b; /* Add a pink outline shadow */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    z-index: 2; /* Ensure it's above other elements */
+}
+
+.user_page .purchased_games .carousel_wrapper, .user_page .collection_row .carousel_wrapper {
+    overflow: visible;
+    overflow-x: visible;
+}
+
+.game_grid_widget.game_list {
+    --itchio_grid_gap:50px !important;
+  display: flex!important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+overflow: visible; /* Allows flex items to overflow the container */
+   min-width:500px;
+}
+
+h1 {
+    font-size: 3.0em !important;
+
+  text-shadow: 
+    0 0 8px rgba(255, 255, 255, 0.5),   /* Glowing white bloom effect */
+    0 0 16px rgba(255, 255, 255, 0.4), 
+    0 0 32px rgba(173, 216, 230, 0.3),  /* Subtle blue outer glow */
+    0 0 64px rgba(173, 216, 230, 0.2);  /* Larger blue glow */
+}
+
+h2 {
+    font-size: 3.0em;
+    text-align: center; /* Horizontally centers the text */
+
+  text-shadow: 
+    0 0 1px rgba(255, 255, 255, 1.0),   /* Glowing white bloom effect */
+    0 0 2px rgba(255, 255, 255, 1.0), 
+    0 0 4px rgba(173, 216, 230, 1.0),  /* Subtle blue outer glow */
+    0 0 8px rgba(173, 216, 230, 1.0);  /* Larger blue glow */
+}
+
+.custom-button {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+    display: inline-block;
+    background: #fb922b;
+    color: white !important;
+    font-color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 14px;
+    text-shadow: 0 1px 0 #c3223e;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.21);
+    text-align: center;
+    line-height: 33px;
+    font-weight: bold;
+    height: 35px;
+    min-width: 150px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and outline */
+}
+
+/* On hover: scale the image and add an outline */
+.custom-button:hover {
+    transform: rotate(1deg) scale(1.15); /* Slightly enlarge the image */
+    box-shadow: 0 0 15px #fb922b; /* Add a pink outline shadow */
+    z-index: 2; /* Ensure it's above other elements */
+}
+
+.custom-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+gap: 20px; /* Sets the space between flex items */
+}
+
+.profile_btn {
+
+}
+
+.profile_btn:hover {
+   color: #fb922b !important;
+}
+
+.header_button:hover {
+   color: #fb922b !important;
+}
+
+.custom-game-embed {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+flex-direction: column
+}
+
+.text_header {
+    text-align: center; /* Centers the text inside this element */
+}
+
+.user_links {
+    text-align: center; /* Centers the text inside this element */
+}
+
+.inner_column {
+width:70%;
+max-width:100% !important;
+}
+
+.custom-peaceful-text {
+    text-align: center; /* Centers the text inside this element */
+  font-size: 2rem;                 /* Text size */
+  font-family: 'Arial', sans-serif; /* Calm, sans-serif font */
+  color: #333;                     /* Initial text color */
+  animation: fade-in-out 8s infinite ease-in-out; /* Fading animation */
+}
+
+@keyframes fade-in-out {
+  0% {
+    color: #333;                   /* Start with dark color */
+    transform: translateY(0);      /* No movement */
+  text-shadow: 
+    0 0 0px rgba(255, 255, 255, 0.5),   /* Glowing white bloom effect */
+  }
+  50% {
+    color: #fb922b;                /* Light color at mid-point */
+    transform: translateY(-10px);  /* Gentle upward movement */
+  text-shadow: 
+    0 0 16px #fb922b,   /* Glowing white bloom effect */
+    0 0 32px #fb922b, 
+    0 0 64px #fb922b,  /* Subtle blue outer glow */
+    0 0 128px #fb922b;  /* Larger blue glow */
+  }
+  100% {
+    color: #333;                   /* Return to dark color */
+    transform: translateY(0);      /* Return to original position */
+  text-shadow: 
+    0 0 0px rgba(255, 255, 255, 0.5),   /* Glowing white bloom effect */
+  }
+}
