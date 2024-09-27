@@ -164,8 +164,19 @@ h2, .link_group, .profile_link, .drop_menu_wrap, .notifications_bell, .header_lo
 
 /* On hover: scale the image and add an outline */
 h2:hover, .link_group:hover, .profile_link:hover, .drop_menu_wrap:hover, .notifications_bell:hover, .header_logo:hover, .header_button:hover {
-    transform: rotate(1deg) scale(1.15); /* Slightly enlarge the image */
+    transform: scale(1.15); /* Slightly enlarge the image */
     z-index: 2; /* Ensure it's above other elements */
    color: #fb922b;
+}
+
+
+h1 {
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* On hover: scale the image and add an outline */
+h1:hover {
+    transform: scale(1.25); /* Slightly enlarge the image */
+    z-index: 2; /* Ensure it's above other elements */
 }
 
